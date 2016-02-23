@@ -38,9 +38,9 @@
         \item Be careful here and make sure that you are taking the derivative with respect to the independent variable.
       \end{itemize}
 
-      \item Plug in the numbers initially given.
+      \item Substitute in the numbers initially given.
       \begin{itemize}
-        \item Be sure to double check that you are plugging in the correct numbers.
+        \item Be sure to double check that you are substituting in the correct numbers.
       \end{itemize}
 
       \item Find any other unknown variables.
@@ -50,71 +50,37 @@
   \newpage
       \item Solve the equation.
       \begin{itemize}
-        \item Make sure with word problems that your solutions sounds reasonable.
+        \item Make sure with word problems that your solutions seems reasonable.
         \item Always double check your work if you are unsure about your answer.
       \end{itemize}
     \end{enumerate}
 
-  \section{Optimization Step-by-Step Solution Guide}
-  To solve for an optimization problem following these step by step instructions will help you find a solution.
-    \begin{enumerate}
-      \item Set up an equation for the desired.
-      \begin{itemize}
-        \item What equation can we use or find that will represent the problem?
-        \item Is the equation well known?
-        \item Or will you have to look in the problem?
-      \end{itemize}
-
-      \item Set up an equation for the constraint.
-      \begin{itemize}
-        \item What equation can we use or find that will represent the problem?
-        \item Is the equation well known?
-        \item Or will you have to look in the problem?
-      \end{itemize}
-
-      \item Use the constraint equation to get the desired function in terms of one variable.
-      \begin{itemize}
-        \item rewrite the constraint equation in terms of one variable and then plug it in to the desired equation.
-      \end{itemize}
-
-      \item Determine the domain of the desired equation.
-      \begin{itemize}
-        \item What values can the independent variable take on?
-        \item make sure that your domain represents the constraints of the question.
-      \end{itemize}
-
-      \item Take the derivative of the desired equation and set it to zero.
-\newpage
-      \item Solve for the other unknown variable.
-      \begin{itemize}
-        \item Make sure with word problems that your solutions sounds reasonable.
-        \item Always double check your work if you are unsure about your answer.
-      \end{itemize}
-    \end{enumerate}
-\noindent\makebox[\linewidth]{\rule{\paperwidth}{0.4pt}}
 \section{Related Rates Example Problem}
-Captain America is fighting Iron man during the marvel civil war. Captain America trades blows with Iron Man and then Iron Man then does an Repulsor Beam Blast that Captain America blocks with his circular shield. This causes his shield to heat up and increase the radius at a rate of $\frac{3}{1000}$${meters}\over{sec}$. What is the rate of the area of Captain America's shield increasing when the radius is $0.7$ $meters$?
+Captain America is fighting Iron Man during the Marvel Civil War. Captain America trades blows with Iron Man and then Iron Man then does a Repulsor Beam Blast that Captain America blocks with his circular shield. This causes his shield to heat up and  the radius to increase at a rate of $0.4$ centimeters per second. At what rate is the area of Captain America's shield increasing when the radius is $40$ centimeters?
 \begin{enumerate}
   \item \textbf{Determine the Desired Value}
   \begin {itemize}
+    \item Let $\frac{dA}{dt}$ be the rate at which the area is increasing.
     \item We are trying to find the rate at which the area of Captain America's shield is increasing. So the desired value that we are trying to solve is:
     \end{itemize}
     \begin{equation}
-      \frac{da}{dt}. \tag{Desired Rate} \label{Desired Rate}
+      \frac{dA}{dt}. \tag{Desired Rate} \label{Desired Rate}
     \end{equation}
 
   \item \textbf{Identify what information is given to you}
   \begin{itemize}
-    \item We are given that we are given the rate the radius is increasing, thus:
+    \item Let $\frac{dr}{dt}$ be the rate at which the radius is increasing and $r$ be the radius of the shield.
+    \item We are given the rate that the radius is increasing, namely:
     \begin{equation}
-      \frac{dr}{dt} = \frac{3}{1000}. \tag{Rate of Radius Change} \label{Rate of Radius Change}
+      \frac{dr}{dt} = 0.4\ \text{centimeters per second}. \tag{Rate of Radius Change} \label{Rate of Radius Change}
     \end{equation}
     \item We are also told that the radius of Captain America's shield, Thus:
     \begin{equation}
-      r = 0.7 meters. \tag{Radius of Shield} \label{Radius of Shield}
+      r = 40\ \text{centimeters}. \tag{Radius of Shield} \label{Radius of Shield}
     \end{equation}
-    \item In the question we are also told that Captain America's shield is circular
+    \item In the question we are also told that Captain America's shield is circular.
   \end{itemize}
+\newpage
   \item \textbf{Determine the equation that relates the variables}
     \begin {itemize}
       \item To form this equation we know that we are trying to find a change in the area \eqref{Desired Rate}. We are given the change in the radius \eqref{Rate of Radius Change}, the radius of the shield \eqref{Radius of Shield}, and that the shield is circular. From this information we can determine that the best equation to use is the equation of a circle given by:
@@ -128,7 +94,7 @@ Captain America is fighting Iron man during the marvel civil war. Captain Americ
       \begin{equation}
       \begin{split}
         A &= \pi r^2\\
-        \frac{da}{dt} &= 2 \pi r \frac{dr}{dt}
+        \frac{dA}{dt} &= 2 \pi r \frac{dr}{dt}.
       \end{split}
       \tag{Derivative of Equation} \label{DRRE}
       \end{equation}
@@ -138,48 +104,93 @@ Captain America is fighting Iron man during the marvel civil war. Captain Americ
       \item Knowing the derivative of the equation we then plug in our variables that we do know. We know the radius \eqref{Radius of Shield} and the change in the radius \eqref{Rate of Radius Change}. Plugging those into the derivative of our equation \eqref{DRRE} we get:
       \begin{equation}
         \begin{split}
-          \frac{da}{dt} &= 2 \pi r \frac{dr}{dt}\\
-          \frac{da}{dt} &= (2) (\pi) (0.7) (\frac{3}{1000})
+          \frac{dA}{dt} &= 2 \pi r \frac{dr}{dt}\\
+          \frac{dA}{dt} &= (2) (\pi) (40) (0.4).
         \end{split}
-        \tag{Values plugged in} \label{VPI}
+        \tag{Values evaluated} \label{VPI}
       \end{equation}
     \end{itemize}
   \item \textbf{Find any other unknown variables}
     \begin{itemize}
-      \item we have no other unknown variables so we then skip onto the next step
+      \item We have no other unknown variables so we then skip onto the next step
     \end{itemize}
+\newpage
   \item \textbf{Solve the equation}
     \begin{itemize}
       \item we have our equation set up,\eqref{VPI} all we have to do is then solve for our desired rate \eqref{Desired Rate}:
       \begin{equation}
         \begin{split}
-          \frac{da}{dt} &= (2) (\pi) (0.7) (\frac{3}{1000})\\
-          \frac{da}{dt} &= 0.0131946891
+          \frac{dA}{dt} &= (2) (\pi) (40) (0.4)\\
+          \frac{dA}{dt} &= (32) (\pi)\\
+          \frac{dA}{dt} &\approx 100.48\ \text{centimeters per second}.
         \end{split}
         \tag{Final Answer} \label{FA}
       \end{equation}
-      \item So then the rate at which the area of Captain America's Shield is expanding is $0.0131946891 \frac{meters}{sec}$.
+      \item So then the rate at which the area of Captain America's Shield is expanding is $100.48$ centimeters per second.
     \end{itemize}
 \end{enumerate}
 
+\noindent\makebox[\linewidth]{\rule{\paperwidth}{0.4pt}}
+
+%SECTION 2 OPTIMIZATION
+  \section{Optimization Step-by-Step Solution Guide}
+  To solve for an optimization problem following these step by step instructions will help you find a solution.
+    \begin{enumerate}
+      \item Set up an equation for the desired.
+      \begin{itemize}
+        \item What equation can we use or find that will represent the problem?
+        \item Is the equation well known?
+      \end{itemize}
+
+      \item Set up an equation for the constraints.
+      \begin{itemize}
+        \item What equation can we use or find that will represent the problem?
+        \item Is the equation well known?
+      \end{itemize}
+
+      \item Use the constraint equation to get the desired function in terms of one variable.
+      \begin{itemize}
+        \item Rewrite the constraint equation in terms of one variable and then substitute it in to the desired equation.
+      \end{itemize}
+\newpage
+      \item Determine the domain of the desired equation.
+      \begin{itemize}
+        \item What values can the independent variable take on?
+        \item Make sure that your domain represents the constraints of the question.
+      \end{itemize}
+
+      \item Take the derivative of the desired equation and set it equal to zero.
+      \begin{itemize}
+        \item This allows us to solve for the unknown variable.
+        \item Can we solve for this variable? If not then check if you can solve for any other unknown variable.
+        \item Consider that the solution might take on an extrema form. Check the domain and the constraints of the problem for a feasible solution.
+      \end {itemize}
+      \item Solve for the other unknown variable.
+      \begin{itemize}
+        \item Make sure with word problems that your solution seems reasonable.
+        \item Always double check your work if you are unsure about your answer.
+      \end{itemize}
+    \end{enumerate}
+
 \section{Optimization Example Problem}
-A king is planning on getting a new castle built. He wants to make sure that the castle is easily defendable and thus wants to have the smallest perimeter possible. The problem is that the king needs space to fit all of his belongings. To fit all of his stuff he needs the castle to be about $127 acres^2$. What is the smallest possible perimeter of the castle if you represent the castle as a rectangle?
+A king is planning on getting a new castle built. He wants to make sure that the castle is easily defendable and thus wants to have the smallest perimeter possible. The problem is that the king needs space to fit all of his belongings. To fit all of his stuff he needs the castle to be about $10$ acres. What is the smallest possible perimeter of the castle if you represent the castle as a rectangle? Note that an acre is $43560$ square feet.
 \begin{enumerate}
   \item \textbf{Set up an equation for the desired}
     \begin{itemize}
-      \item Since we are trying to solve for the minimal parameter of a rectangle, or in this case a castle. Let us denote the width and the length of the castle by $w$ and $l$ respectively. Our equation is then:
+      \item We are trying to solve for the minimal perimeter of a rectangle, or in this case a castle. Let us denote the width and the length of the castle by $w$ and $l$ respectively. Our equation is then:
       \begin{equation}
-        P = 2w + 2l. \tag{Parimeter of Castle} \label{p}
+        P = 2w + 2l. \tag{Perimeter of Castle} \label{p}
       \end{equation}
     \end{itemize}
 
   \item \textbf{Set up an equation for the constraint}
     \begin{itemize}
-      \item We are trying to find the width and the length of the castle whose area is $127 acres^2$. Our equation is then:
+      \item We are trying to find the width and the length of the castle whose area is $10$ acres. Converting from acres to square feet, Our equation is then:
       \begin{equation}
         \begin{split}
           A &= w l\\
-          127 &= wl
+          10\ \text{acres} &= wl\\
+          435600\ \text{square feet} &=wl
         \end{split}
         \tag{Area of Castle} \label{A}
       \end{equation}
@@ -187,12 +198,12 @@ A king is planning on getting a new castle built. He wants to make sure that the
 
   \item \textbf{Use the constraint equation to get the desired function in terms of one variable}
     \begin{itemize}
-      \item for this step we will be rewriting the constraint equation \eqref{A} in terms of $l$ to solve for our desired function \eqref{p}:
+      \item For this step we will be solving the constraint equation \eqref{A} for $l$ in terms of $w$ to solve for our desired function \eqref{p}:
       \begin{equation}
         \begin{align*}
-          127 &= wl         &  P &= 2w + 2l\\
-          l &= 127/w        &  P &= 2w + 2(\frac{127}{w})\\
-          &                 &  P &= 2w + \frac{254}{w}\\
+          435600 &= wl         &  P &= 2w + 2l\\
+          l &= \frac{435600}{w}        &  P &= 2w + 2(\frac{435600}{w})\\
+          &                 &  P &= 2w + \frac{871200}{w}\\
         \end{align*}
         \tag{Desired in terms of L} \label{DITOL}
       \end{equation}
@@ -200,49 +211,50 @@ A king is planning on getting a new castle built. He wants to make sure that the
 
   \item \textbf{Determine the domain of the desired equation}
     \begin{itemize}
-      \item In the domain of the desired equation \eqref{DITOL}, we see that our width $w$ is in the denominator of the equation. As such we see that $w$ cannot equal zero otherwise we would be dividing by zero. This also makes sense because we cannot have a non existent width. We are also dealing with units measuring length and thus cannot be zero so our domain is:
+      \item In the domain of the desired equation \eqref{DITOL}, we see that our width $w$ is in the denominator of the equation. As such we see that $w$ cannot equal zero otherwise we would be dividing by zero. This also makes sense because we cannot have a non existent width. Thus our domain is:
       \begin{equation}
-        w > 0 \tag{Domain} \label{Domain}
+        w > 0. \tag{Domain} \label{Domain}
       \end{equation}
     \end{itemize}
-
+\newpage
   \item \textbf{Take the derivative of the desired equation and set it to zero}
     \begin{itemize}
       \item We then take the perimeter of our desired equation \eqref{DITOL}, and then set it to zero:
       \begin{equation}
         \begin{split}
-          P &= 2w + \frac{254}{w}\\
-          \frac{dp}{dx} &= 2 - \frac{127}{w^2}\\
-          0 &= 2 - \frac{254}{w^2}\\
-          w^2 &= 127\\
-          w &= \pm 11.269
+          P &= 2w + \frac{871200}{w}\\
+          \frac{dp}{dw} &= 2 - \frac{435600}{w^2}\\
+          0 &= 2 - \frac{871200}{w^2}\\
+          w^2 &= 435600\\
+          w &= \pm 660\ {feet}.
         \end{split}
         \tag{Width Value} \label{w}
       \end{equation}
-      \item Since our domain \eqref{Domain} is $x > 0$ our width value is then positive.
+      \item Since our domain \eqref{Domain} is $w > 0$ our width value is then positive.
     \end{itemize}
-
   \item \textbf{Solve for the other unknown variable}
     \begin{itemize}
-      \item with our width solved for \eqref{w} we then need to then solve for our length $l$. We have an equation that can give us a numeric value for $l$ \eqref{A}.
+      \item With our width solved for \eqref{w} we then need to then solve for our length $l$. We have an equation that can give us a numeric value for $l$ \eqref{A}.
       \begin{equation}
         \begin{split}
           A &= wl\\
-          127 &= (11.269) l\\
-          l &= 11.269\\
+          435600 &= (660) l\\
+          l &= 660\ \text{feet}
         \end{split}
         \tag {Length} \tag{l}
       \end{equation}
-      \item Now that we know the length we must then find the the perimeter:
+      \item Now that we know the length, we can find the the perimeter:
       \begin{equation}
         \begin{split}
           P &= 2w + 2l\\
-          P &= 2(11.269) + 2(22.269)\\
-          P &= 45.07\\
+          P &= 2(660) + 2(660)\\
         \end{split}
-        \tag {Perimeter} \label{peri}
+        \tag {Solving Perimeter} \label{peri}
       \end{equation}
-      \item We have now solved for the smallest perimeter \eqref{peri} while still maintaining the desired area.
+      \item We have now solved for the smallest perimeter \eqref{peri} while still maintaining the desired area which is:
+      \begin{equation}
+        P = 2640\ \text{feet}. \tag{Perimeter}
+      \end{equation}
     \end{itemize}
   \end{enumerate}
 \end{document}
