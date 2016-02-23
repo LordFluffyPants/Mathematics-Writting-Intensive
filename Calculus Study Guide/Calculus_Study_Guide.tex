@@ -1,0 +1,248 @@
+\documentclass[12pt]{article}
+\usepackage{blindtext}
+\usepackage{amsmath}
+\usepackage[utf8]{inputenc}
+\title{Calculus Study Guide}
+\author{John Wesley Hayhurst}
+\date{\today}
+
+\begin{titlepage}
+  \maketitle
+\end{titlepage}
+
+\begin{document}
+  For this study guide we will be going over how to solve the types of problems you will be seeing on the test. This includes related rates and optimization problems.
+  \section{Related Rates Step-by-Step Solution Guide}
+    To solve for a related rates problem following these step by step instructions will help you find a solution.
+    \begin{enumerate}
+      \item Determine the desired value.
+      \begin{itemize}
+        \item What value are we looking for? Is that value a rate?
+      \end{itemize}
+
+      \item Identify what information is given to you.
+      \begin{itemize}
+        \item What do we already know about the problem?
+        \item What can we infer about the problem?
+      \end{itemize}
+
+      \item Determine the equation that relates the variables.
+      \begin{itemize}
+        \item What equation can we use or find that will relate the variables?
+        \item Is the equation well known?
+        \item Or will you have to look in the problem?
+      \end{itemize}
+
+      \item Take the derivative of the equation that relates the variables.
+      \begin{itemize}
+        \item Be careful here and make sure that you are taking the derivative with respect to the independent variable.
+      \end{itemize}
+
+      \item Plug in the numbers initially given.
+      \begin{itemize}
+        \item Be sure to double check that you are plugging in the correct numbers.
+      \end{itemize}
+
+      \item Find any other unknown variables.
+      \begin{itemize}
+        \item Make sure that if there are any other unknown variables that you identify them and solve for them.
+      \end{itemize}
+  \newpage
+      \item Solve the equation.
+      \begin{itemize}
+        \item Make sure with word problems that your solutions sounds reasonable.
+        \item Always double check your work if you are unsure about your answer.
+      \end{itemize}
+    \end{enumerate}
+
+  \section{Optimization Step-by-Step Solution Guide}
+  To solve for an optimization problem following these step by step instructions will help you find a solution.
+    \begin{enumerate}
+      \item Set up an equation for the desired.
+      \begin{itemize}
+        \item What equation can we use or find that will represent the problem?
+        \item Is the equation well known?
+        \item Or will you have to look in the problem?
+      \end{itemize}
+
+      \item Set up an equation for the constraint.
+      \begin{itemize}
+        \item What equation can we use or find that will represent the problem?
+        \item Is the equation well known?
+        \item Or will you have to look in the problem?
+      \end{itemize}
+
+      \item Use the constraint equation to get the desired function in terms of one variable.
+      \begin{itemize}
+        \item rewrite the constraint equation in terms of one variable and then plug it in to the desired equation.
+      \end{itemize}
+
+      \item Determine the domain of the desired equation.
+      \begin{itemize}
+        \item What values can the independent variable take on?
+        \item make sure that your domain represents the constraints of the question.
+      \end{itemize}
+
+      \item Take the derivative of the desired equation and set it to zero.
+\newpage
+      \item Solve for the other unknown variable.
+      \begin{itemize}
+        \item Make sure with word problems that your solutions sounds reasonable.
+        \item Always double check your work if you are unsure about your answer.
+      \end{itemize}
+    \end{enumerate}
+\noindent\makebox[\linewidth]{\rule{\paperwidth}{0.4pt}}
+\section{Related Rates Example Problem}
+Captain America is fighting Iron man during the marvel civil war. Captain America trades blows with Iron Man and then Iron Man then does an Repulsor Beam Blast that Captain America blocks with his circular shield. This causes his shield to heat up and increase the radius at a rate of $\frac{3}{1000}$${meters}\over{sec}$. What is the rate of the area of Captain America's shield increasing when the radius is $0.7$ $meters$?
+\begin{enumerate}
+  \item \textbf{Determine the Desired Value}
+  \begin {itemize}
+    \item We are trying to find the rate at which the area of Captain America's shield is increasing. So the desired value that we are trying to solve is:
+    \end{itemize}
+    \begin{equation}
+      \frac{da}{dt}. \tag{Desired Rate} \label{Desired Rate}
+    \end{equation}
+
+  \item \textbf{Identify what information is given to you}
+  \begin{itemize}
+    \item We are given that we are given the rate the radius is increasing, thus:
+    \begin{equation}
+      \frac{dr}{dt} = \frac{3}{1000}. \tag{Rate of Radius Change} \label{Rate of Radius Change}
+    \end{equation}
+    \item We are also told that the radius of Captain America's shield, Thus:
+    \begin{equation}
+      r = 0.7 meters. \tag{Radius of Shield} \label{Radius of Shield}
+    \end{equation}
+    \item In the question we are also told that Captain America's shield is circular
+  \end{itemize}
+  \item \textbf{Determine the equation that relates the variables}
+    \begin {itemize}
+      \item To form this equation we know that we are trying to find a change in the area \eqref{Desired Rate}. We are given the change in the radius \eqref{Rate of Radius Change}, the radius of the shield \eqref{Radius of Shield}, and that the shield is circular. From this information we can determine that the best equation to use is the equation of a circle given by:
+      \begin{equation}
+        A = \pi r^2. \tag{Related Rate Equation} \label{Area of Shield}
+      \end{equation}
+    \end{itemize}
+  \item \textbf{Take the derivative of the equation that relates the variables}
+    \begin{itemize}
+      \item With our related rate equation \eqref{Area of Shield} we then can take the derivative of that equation resulting in:
+      \begin{equation}
+      \begin{split}
+        A &= \pi r^2\\
+        \frac{da}{dt} &= 2 \pi r \frac{dr}{dt}
+      \end{split}
+      \tag{Derivative of Equation} \label{DRRE}
+      \end{equation}
+    \end{itemize}
+  \item \textbf{Plug in the numbers initially given}
+    \begin{itemize}
+      \item Knowing the derivative of the equation we then plug in our variables that we do know. We know the radius \eqref{Radius of Shield} and the change in the radius \eqref{Rate of Radius Change}. Plugging those into the derivative of our equation \eqref{DRRE} we get:
+      \begin{equation}
+        \begin{split}
+          \frac{da}{dt} &= 2 \pi r \frac{dr}{dt}\\
+          \frac{da}{dt} &= (2) (\pi) (0.7) (\frac{3}{1000})
+        \end{split}
+        \tag{Values plugged in} \label{VPI}
+      \end{equation}
+    \end{itemize}
+  \item \textbf{Find any other unknown variables}
+    \begin{itemize}
+      \item we have no other unknown variables so we then skip onto the next step
+    \end{itemize}
+  \item \textbf{Solve the equation}
+    \begin{itemize}
+      \item we have our equation set up,\eqref{VPI} all we have to do is then solve for our desired rate \eqref{Desired Rate}:
+      \begin{equation}
+        \begin{split}
+          \frac{da}{dt} &= (2) (\pi) (0.7) (\frac{3}{1000})\\
+          \frac{da}{dt} &= 0.0131946891
+        \end{split}
+        \tag{Final Answer} \label{FA}
+      \end{equation}
+      \item So then the rate at which the area of Captain America's Shield is expanding is $0.0131946891 \frac{meters}{sec}$.
+    \end{itemize}
+\end{enumerate}
+
+\section{Optimization Example Problem}
+A king is planning on getting a new castle built. He wants to make sure that the castle is easily defendable and thus wants to have the smallest perimeter possible. The problem is that the king needs space to fit all of his belongings. To fit all of his stuff he needs the castle to be about $127 acres^2$. What is the smallest possible perimeter of the castle if you represent the castle as a rectangle?
+\begin{enumerate}
+  \item \textbf{Set up an equation for the desired}
+    \begin{itemize}
+      \item Since we are trying to solve for the minimal parameter of a rectangle, or in this case a castle. Let us denote the width and the length of the castle by $w$ and $l$ respectively. Our equation is then:
+      \begin{equation}
+        P = 2w + 2l. \tag{Parimeter of Castle} \label{p}
+      \end{equation}
+    \end{itemize}
+
+  \item \textbf{Set up an equation for the constraint}
+    \begin{itemize}
+      \item We are trying to find the width and the length of the castle whose area is $127 acres^2$. Our equation is then:
+      \begin{equation}
+        \begin{split}
+          A &= w l\\
+          127 &= wl
+        \end{split}
+        \tag{Area of Castle} \label{A}
+      \end{equation}
+    \end{itemize}
+
+  \item \textbf{Use the constraint equation to get the desired function in terms of one variable}
+    \begin{itemize}
+      \item for this step we will be rewriting the constraint equation \eqref{A} in terms of $l$ to solve for our desired function \eqref{p}:
+      \begin{equation}
+        \begin{align*}
+          127 &= wl         &  P &= 2w + 2l\\
+          l &= 127/w        &  P &= 2w + 2(\frac{127}{w})\\
+          &                 &  P &= 2w + \frac{254}{w}\\
+        \end{align*}
+        \tag{Desired in terms of L} \label{DITOL}
+      \end{equation}
+    \end{itemize}
+
+  \item \textbf{Determine the domain of the desired equation}
+    \begin{itemize}
+      \item In the domain of the desired equation \eqref{DITOL}, we see that our width $w$ is in the denominator of the equation. As such we see that $w$ cannot equal zero otherwise we would be dividing by zero. This also makes sense because we cannot have a non existent width. We are also dealing with units measuring length and thus cannot be zero so our domain is:
+      \begin{equation}
+        w > 0 \tag{Domain} \label{Domain}
+      \end{equation}
+    \end{itemize}
+
+  \item \textbf{Take the derivative of the desired equation and set it to zero}
+    \begin{itemize}
+      \item We then take the perimeter of our desired equation \eqref{DITOL}, and then set it to zero:
+      \begin{equation}
+        \begin{split}
+          P &= 2w + \frac{254}{w}\\
+          \frac{dp}{dx} &= 2 - \frac{127}{w^2}\\
+          0 &= 2 - \frac{254}{w^2}\\
+          w^2 &= 127\\
+          w &= \pm 11.269
+        \end{split}
+        \tag{Width Value} \label{w}
+      \end{equation}
+      \item Since our domain \eqref{Domain} is $x > 0$ our width value is then positive.
+    \end{itemize}
+
+  \item \textbf{Solve for the other unknown variable}
+    \begin{itemize}
+      \item with our width solved for \eqref{w} we then need to then solve for our length $l$. We have an equation that can give us a numeric value for $l$ \eqref{A}.
+      \begin{equation}
+        \begin{split}
+          A &= wl\\
+          127 &= (11.269) l\\
+          l &= 11.269\\
+        \end{split}
+        \tag {Length} \tag{l}
+      \end{equation}
+      \item Now that we know the length we must then find the the perimeter:
+      \begin{equation}
+        \begin{split}
+          P &= 2w + 2l\\
+          P &= 2(11.269) + 2(22.269)\\
+          P &= 45.07\\
+        \end{split}
+        \tag {Perimeter} \label{peri}
+      \end{equation}
+      \item We have now solved for the smallest perimeter \eqref{peri} while still maintaining the desired area.
+    \end{itemize}
+  \end{enumerate}
+\end{document}
