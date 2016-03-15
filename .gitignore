@@ -4,3 +4,7 @@
 *.log
 *.synctex.gz
 *.DS_Store
+*.out
+*.nav
+*.snm
+*.toc
